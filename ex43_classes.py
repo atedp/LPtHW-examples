@@ -115,6 +115,7 @@ class LaserWeaponArmory(Scene):
             """))
 
         code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"
+        print(code)
         guess = input("[keypad]> ")
         guesses = 0
 
@@ -227,12 +228,12 @@ class Finished(Scene):
 class Map(object):
 
     scenes = {
-        'central_corridor':CentralCorridor(),
-        'laser_weapon_armory':LaserWeaponArmory(),
-        'the_bridge':TheBridge(),
-        'escape_pod':EscapePod(),
-        'death':Death(),
-        'finished':Finished(),
+        'central_corridor' : CentralCorridor(),
+        'laser_weapon_armory' : LaserWeaponArmory(),
+        'the_bridge' : TheBridge(),
+        'escape_pod' : EscapePod(),
+        'death' : Death(),
+        'finished' : Finished(),
     }
 
     def __init__(self, start_scene):
