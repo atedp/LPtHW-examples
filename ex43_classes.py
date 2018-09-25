@@ -243,7 +243,7 @@ class Map(object):
         return val
 
     def opening_scene(self):
-        return self.next_scene(self, start_scene)
+        return self.next_scene(self.start_scene)
 
 a_map = Map('central_corridor')
 a_game = Engine(a_map)
